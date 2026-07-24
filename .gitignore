@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Backups
+_backup/
+
+# Altes Projekt
+_scaffold_archiv/
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+
+# Logs
+*.log
+
