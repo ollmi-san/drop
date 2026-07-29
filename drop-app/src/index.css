@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DROP — Premium Fashion Studio CSS
+   Ziel: Elegant, cinematic, tief, nicht überladen
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body, #root { height: 100%; }
+  body {
+    background: #FAF7F2;
+    color: #1C1A22;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 99px; }
+}
+
+/* ── DROP Button-Effekt (native :hover/:active = Druck immer sichtbar) ─────
+   Hover: hebt sich an · Klick: drückt sich rein · 0.15s ease            */
+.drop-btn {
+  cursor: pointer;
+  transform: translateY(0) scale(1);
+  transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+}
+.drop-btn:hover  { transform: translateY(-2px) scale(1.03); filter: brightness(1.08); }
+.drop-btn:active { transform: translateY(2px)  scale(0.96); filter: brightness(0.88); }
+.drop-btn:disabled { cursor: not-allowed; transform: none; filter: none; opacity: 0.5; }
+
+/* ── Keyframes ─────────────────────────────────────────────────────────── */
+
+/* Kamera atmet: ultrafein, erzeugt "lebendiges" Gefühl */
+@keyframes breathe {
+  0%, 100% { transform: scale(1.000); }
+  50%       { transform: scale(1.0035); }
+}
+
+/* Avatar schwebt minimal auf und ab */
+@keyframes avatarFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-5px); }
+}
+
+/* Karten schweben leicht */
+@keyframes cardFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-4px); }
+}
+
+/* Goldener Flash beim erfolgreichen Drop */
+@keyframes goldDrop {
+  0%   { opacity: 0;   box-shadow: 0 0  0px rgba(255,210,100,0); }
+  20%  { opacity: 1;   box-shadow: 0 0 60px rgba(255,210,100,0.45), 0 0 120px rgba(255,180,60,0.20); }
+  100% { opacity: 0;   box-shadow: 0 0  0px rgba(255,210,100,0); }
+}
+
+/* Glow-Puls für Rimlight */
+@keyframes rimPulse {
+  0%, 100% { opacity: 0.55; }
+  50%       { opacity: 0.80; }
+}
+
+/* Spotlight-Strahl flackert minimal */
+@keyframes beamFlicker {
+  0%, 100% { opacity: 0.70; }
+  33%       { opacity: 1.00; }
+  66%       { opacity: 0.55; }
+}
+
+/* Nebel driftet */
+@keyframes fogDrift {
+  0%   { transform: translateX(0px) translateY(0px); }
+  33%  { transform: translateX(8px)  translateY(-4px); }
+  66%  { transform: translateX(-5px) translateY(3px); }
+  100% { transform: translateX(0px)  translateY(0px); }
+}
+
+/* Weiche Kleidungs-Fade-in */
+@keyframes clothFadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-6px) scaleY(0.97); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0)    scaleY(1); }
+}
+
+/* Schrank-Kachel Fade-in (hochgeladene Kleidung) */
+@keyframes tileFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Hover Lift */
+@keyframes hoverLift {
+  from { transform: translateY(0);  }
+  to   { transform: translateY(-4px); }
+}
+
+/* Subtle scan line effect für Sci-Fi Flair */
+@keyframes scanLine {
+  0%   { top: -5%; }
+  100% { top: 105%; }
+}
+
+/* ── Utility Classes ───────────────────────────────────────────────────── */
+
+/* Ganzseiten-Vignette */
+.vignette::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    transparent 40%,
+    rgba(0,0,0,0.45) 75%,
+    rgba(0,0,0,0.72) 100%
+  );
+  z-index: 1;
+}
+
+/* Breathing wrapper */
+.breathing {
+  animation: breathe 9s ease-in-out infinite;
+  transform-origin: 50% 40%;
+}
+
+/* Avatar Float */
+.avatar-float {
+  animation: avatarFloat 5s ease-in-out infinite;
+}
+
+/* Card Float (gestaffelter Start via animation-delay) */
+.card-float {
+  animation: cardFloat 4s ease-in-out infinite;
+}
+
+/* Gold Drop Flash overlay */
+.gold-flash {
+  animation: goldDrop 0.65s ease-out forwards;
+}
+
+/* Cloth layer fade-in */
+.cloth-layer {
+  animation: clothFadeIn 0.25s ease-out forwards;
+}
+
+/* Schrank-Kachel: sanftes Einblenden hochgeladener Kleidung */
+.tile-fade-in {
+  animation: tileFadeIn 0.3s ease-out;
+}
+
+/* Horizontale Scroll-Leisten ohne sichtbare Scrollbar (Mobile) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Premium Button */
+.btn-primary {
+  padding: 10px 22px;
+  border-radius: 22px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  background: linear-gradient(135deg, #8070ff 0%, #5a4fd0 100%);
+  color: #fff;
+  box-shadow:
+    0 4px 18px rgba(120,100,255,0.40),
+    0 1px 0 rgba(255,255,255,0.18) inset,
+    0 -1px 0 rgba(0,0,0,0.18) inset;
+}
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.10) 0%, transparent 60%);
+  pointer-events: none;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 8px 28px rgba(120,100,255,0.55),
+    0 1px 0 rgba(255,255,255,0.18) inset;
+}
+.btn-primary:active { transform: translateY(0); }
+
+.btn-ghost {
+  padding: 10px 16px;
+  border-radius: 22px;
+  font-size: 13px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.10);
+  color: rgba(240,240,248,0.50);
+  transition: all 0.18s ease;
+  backdrop-filter: blur(4px);
+}
+.btn-ghost:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.18);
+  color: rgba(240,240,248,0.80);
+  transform: translateY(-1px);
+}
+
+/* Glass Panel */
+.glass-panel {
+  background: rgba(255,255,255,0.028);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+/* Avatar drag cursor */
+.avatar-drag { user-select: none; -webkit-user-select: none; }
+.avatar-drag:active { cursor: grabbing !important; }

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 620" fill="none">
+<defs>
+  <linearGradient id="fig" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#52546e"/>
+    <stop offset="60%"  stop-color="#3e4058"/>
+    <stop offset="100%" stop-color="#2a2b3a"/>
+  </linearGradient>
+  <linearGradient id="figD" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#2a2b3a"/>
+    <stop offset="100%" stop-color="#42445a"/>
+  </linearGradient>
+  <linearGradient id="sk" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#d4a07a"/>
+    <stop offset="100%" stop-color="#b88060"/>
+  </linearGradient>
+  <linearGradient id="hr" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#1e1614"/>
+    <stop offset="100%" stop-color="#0f0c0a"/>
+  </linearGradient>
+  <filter id="gs"><feGaussianBlur stdDeviation="0.6"/></filter>
+</defs>
+
+<ellipse cx="128" cy="615" rx="48" ry="6" fill="rgba(70,55,180,0.18)" filter="url(#gs)"/>
+
+<!-- Schuh Seitenprofil -->
+<path d="M94 572 L88 598 Q86 608 100 610 L132 610 Q144 607 141 597 L136 575 Z" fill="#1a1b24"/>
+<path d="M88 597 L141 597" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"/>
+<!-- Absatz -->
+<rect x="88" y="595" width="22" height="6" rx="2" fill="#111118"/>
+
+<!-- Unterschenkel (Seitenprofil) -->
+<path d="M102 456 L96 575 Q95 582 103 584 L124 584 Q132 582 131 573 L127 456 Z" fill="url(#fig)"/>
+<!-- Wade-Wölbung -->
+<path d="M128 478 Q136 502 132 540" stroke="rgba(255,255,255,0.06)" stroke-width="2.5" fill="none"/>
+
+<!-- Oberschenkel -->
+<path d="M104 305 L100 458 Q99 465 106 468 L124 468 Q132 466 131 457 L128 305 Z" fill="url(#fig)"/>
+<!-- Knie -->
+<path d="M130 438 Q138 445 136 458" stroke="rgba(255,255,255,0.05)" stroke-width="2.5" fill="none"/>
+
+<!-- Hüfte Seitenprofil -->
+<path d="M100 270 Q95 286 97 306 L104 314 L130 314 L136 304
+         Q134 284 130 270 Q124 258 116 257 Q108 258 100 270 Z" fill="url(#fig)"/>
+<!-- Gesäß -->
+<path d="M97 276 Q91 296 94 316" stroke="rgba(255,255,255,0.05)" stroke-width="3" fill="none"/>
+
+<!-- Torso Seitenprofil (S-Kurve: Brust vor, Taille ein, Rücken gerade) -->
+<path d="M100 142 Q93 150 91 168 L89 252 Q88 265 96 273 L100 278 L132 278
+         L140 268 Q145 258 143 248 L141 168 Q139 150 132 142
+         Q124 136 116 136 Q108 136 100 142 Z" fill="url(#fig)"/>
+<!-- Brust-Wölbung vorne -->
+<path d="M140 158 Q148 172 146 194" stroke="rgba(255,255,255,0.07)" stroke-width="3" fill="none"/>
+<!-- Rücken leicht gewölbt -->
+<path d="M90 162 Q89 205 90 258" stroke="rgba(255,255,255,0.05)" stroke-width="2" fill="none"/>
+<!-- Taille Einzug -->
+<path d="M90 215 Q88 228 92 238" stroke="rgba(255,255,255,0.05)" stroke-width="3.5" fill="none"/>
+
+<!-- Vorderer Arm -->
+<path d="M134 154 Q145 161 149 183 L153 266 Q155 278 147 280 L138 282 L132 196 Q130 168 130 150 Z"
+      fill="url(#figD)"/>
+<ellipse cx="151" cy="283" rx="9" ry="7" fill="url(#sk)" transform="rotate(10,151,283)"/>
+
+<!-- Schulter -->
+<ellipse cx="131" cy="148" rx="13" ry="10" fill="url(#fig)"/>
+
+<!-- Hals -->
+<path d="M114 118 Q111 128 111 140 L120 144 L129 140 Q129 128 127 118 Z" fill="url(#sk)"/>
+
+<!-- Kopf Seitenprofil -->
+<path d="M100 74 Q98 52 114 40 Q122 34 130 38 Q144 46 146 74
+         Q144 98 136 110 Q130 118 120 118 Q110 118 104 110 Q100 96 100 74 Z" fill="url(#sk)"/>
+<!-- Kinn -->
+<path d="M100 90 Q99 110 120 118 Q110 114 104 106 Q100 100 100 90 Z" fill="url(#sk)"/>
+<!-- Nase -->
+<path d="M146 76 L153 87 L147 91" stroke="url(#sk)" stroke-width="2" fill="none" stroke-linecap="round" stroke-opacity="0.6"/>
+<!-- Mund -->
+<path d="M142 104 Q146 107 149 104" stroke="#8a5045" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<!-- Auge -->
+<ellipse cx="135" cy="72" rx="5" ry="4" fill="rgba(20,14,12,0.88)"/>
+<ellipse cx="136.5" cy="70.5" rx="1.3" ry="1.1" fill="rgba(255,255,255,0.6)"/>
+<!-- Braue -->
+<path d="M128 66 Q134 63 141 65" stroke="rgba(20,14,12,0.8)" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+<!-- Haar Seitenprofil -->
+<path d="M100 72 Q97 50 114 38 Q122 32 130 36 Q144 44 146 72
+         Q142 52 132 44 Q122 38 112 42 Q100 52 100 72 Z" fill="url(#hr)"/>
+<!-- Bun hinten -->
+<ellipse cx="96" cy="64" rx="13" ry="10" fill="url(#hr)"/>
+<ellipse cx="92" cy="60" rx="8"  ry="6"  fill="rgba(10,8,6,0.7)"/>
+</svg>

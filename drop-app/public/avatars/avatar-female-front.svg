@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 620" fill="none">
+<defs>
+  <!-- Haupt-Body Gradient: helleres Blau-Grau mit Licht von oben-links -->
+  <linearGradient id="fig" x1="10%" y1="0%" x2="90%" y2="100%">
+    <stop offset="0%"   stop-color="#52546e"/>
+    <stop offset="55%"  stop-color="#3e4058"/>
+    <stop offset="100%" stop-color="#2a2b3a"/>
+  </linearGradient>
+  <!-- Rim Light rechte Seite -->
+  <linearGradient id="rim" x1="100%" y1="0%" x2="0%" y2="0%">
+    <stop offset="0%"   stop-color="#7880b0" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </linearGradient>
+  <!-- Haut -->
+  <linearGradient id="sk" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#d4a07a"/>
+    <stop offset="100%" stop-color="#b88060"/>
+  </linearGradient>
+  <!-- Haar -->
+  <linearGradient id="hr" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#1e1614"/>
+    <stop offset="100%" stop-color="#0f0c0a"/>
+  </linearGradient>
+  <filter id="gs"><feGaussianBlur stdDeviation="0.6"/></filter>
+</defs>
+
+<!-- Bodenschatten -->
+<ellipse cx="130" cy="615" rx="56" ry="7" fill="rgba(70,55,180,0.18)" filter="url(#gs)"/>
+
+<!-- ═══ SCHUHE ════════════════════════════════════════════════════════════ -->
+<path d="M88 572 L83 596 Q81 605 93 607 L113 607 Q123 604 121 595 L118 574 Z" fill="#1a1b24"/>
+<path d="M172 572 L177 596 Q179 605 167 607 L147 607 Q137 604 139 595 L142 574 Z" fill="#1a1b24"/>
+
+<!-- ═══ UNTERSCHENKEL ══════════════════════════════════════════════════════ -->
+<path d="M89 458 L85 574 Q84 580 91 582 L112 582 Q119 580 118 572 L116 458 Z" fill="url(#fig)"/>
+<path d="M171 458 L175 574 Q176 580 169 582 L148 582 Q141 580 142 572 L144 458 Z" fill="url(#fig)"/>
+<!-- Rim rechts -->
+<path d="M175 468 L174 566" stroke="url(#rim)" stroke-width="3" fill="none"/>
+
+<!-- ═══ OBERSCHENKEL ════════════════════════════════════════════════════════ -->
+<path d="M94 308 L88 460 Q87 467 94 470 L114 470 Q121 468 120 460 L116 308 Z" fill="url(#fig)"/>
+<path d="M166 308 L172 460 Q173 467 166 470 L146 470 Q139 468 140 460 L144 308 Z" fill="url(#fig)"/>
+<!-- Knie-Highlights -->
+<ellipse cx="104" cy="446" rx="10" ry="8" fill="rgba(255,255,255,0.05)"/>
+<ellipse cx="156" cy="446" rx="10" ry="8" fill="rgba(255,255,255,0.05)"/>
+
+<!-- ═══ HÜFTE ═══════════════════════════════════════════════════════════════ -->
+<path d="
+  M96 275
+  Q91 290 91 308 L94 315
+  L166 315 L169 308
+  Q169 290 164 275
+  Q157 262 130 262
+  Q103 262 96 275 Z
+" fill="url(#fig)"/>
+
+<!-- ═══ TORSO (Sanduhr-Silhouette) ════════════════════════════════════════ -->
+<path d="
+  M90 142
+  Q82 148 80 166
+  L77 248
+  Q76 262 84 270
+  L96 278 L130 282 L164 278 L176 270
+  Q184 262 183 248
+  L180 166
+  Q178 148 170 142
+  Q152 132 130 130
+  Q108 132 90 142 Z
+" fill="url(#fig)"/>
+<!-- Rim light rechts -->
+<path d="M181 150 Q184 200 181 268" stroke="url(#rim)" stroke-width="4" fill="none" stroke-linecap="round"/>
+<!-- Taillenschatten -->
+<path d="M79 218 Q77 232 82 242 L130 246 L178 242 Q183 232 181 218"
+      fill="rgba(0,0,0,0.07)"/>
+<!-- Brustlinie subtil -->
+<path d="M92 172 Q111 180 130 178 Q149 180 168 172"
+      stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none"/>
+<!-- Brust-Volumen rechts -->
+<path d="M181 162 Q186 175 183 192" stroke="rgba(255,255,255,0.06)" stroke-width="2.5" fill="none"/>
+
+<!-- ═══ ARME ════════════════════════════════════════════════════════════════ -->
+<!-- Links -->
+<path d="M80 156 Q68 162 64 184 L58 270 Q56 282 65 285 L77 287 L86 198 Q87 170 90 148 Z"
+      fill="url(#fig)"/>
+<ellipse cx="66" cy="289" rx="10" ry="8" fill="url(#sk)" transform="rotate(-8,66,289)"/>
+<!-- Rechts -->
+<path d="M180 156 Q192 162 196 184 L202 270 Q204 282 195 285 L183 287 L174 198 Q173 170 170 148 Z"
+      fill="url(#fig)"/>
+<ellipse cx="194" cy="289" rx="10" ry="8" fill="url(#sk)" transform="rotate(8,194,289)"/>
+<!-- Arm Rim rechts -->
+<path d="M202 195 L200 268" stroke="url(#rim)" stroke-width="2" fill="none" stroke-opacity="0.6"/>
+
+<!-- ═══ SCHULTERN ══════════════════════════════════════════════════════════ -->
+<ellipse cx="85"  cy="150" rx="14" ry="10" fill="url(#fig)"/>
+<ellipse cx="175" cy="150" rx="14" ry="10" fill="url(#fig)"/>
+
+<!-- ═══ HALS ═══════════════════════════════════════════════════════════════ -->
+<path d="M116 120 Q113 128 113 140 L130 144 L147 140 Q147 128 144 120 Q138 116 130 116 Q122 116 116 120 Z"
+      fill="url(#sk)"/>
+
+<!-- ═══ KOPF (ausgewogene Proportion: ~1/6.5 der Gesamthöhe) ══════════════ -->
+<!-- Gesamtkörper ~ 30..610 = 580px, Kopf ~ 30..118 = 88px = 15.2% -->
+<path d="
+  M100 76
+  Q99  52 114 40
+  Q122 34 130 34
+  Q138 34 146 40
+  Q161 52 160 76
+  Q159 100 148 112
+  Q140 120 130 120
+  Q120 120 112 112
+  Q101 100 100 76 Z
+" fill="url(#sk)"/>
+<!-- Kiefer -->
+<path d="M108 98 Q108 116 130 120 Q152 116 152 98" fill="url(#sk)"/>
+
+<!-- ═══ HAAR ════════════════════════════════════════════════════════════════ -->
+<!-- Hochgesteckt: deckt Stirn und Seiten, Bun oben -->
+<path d="
+  M100 74
+  Q98  50 114 38
+  Q122 32 130 32
+  Q138 32 146 38
+  Q162 50 160 74
+  Q157 54 146 44
+  Q138 38 130 38
+  Q122 38 114 44
+  Q103 54 100 74 Z
+" fill="url(#hr)"/>
+<!-- Seiten-Haar -->
+<path d="M100 74 Q98 62 100 50" stroke="url(#hr)" stroke-width="6" stroke-linecap="round" fill="none"/>
+<path d="M160 74 Q162 62 160 50" stroke="url(#hr)" stroke-width="6" stroke-linecap="round" fill="none"/>
+<!-- Bun -->
+<ellipse cx="130" cy="30" rx="16" ry="11" fill="url(#hr)"/>
+<ellipse cx="130" cy="26" rx="9"  ry="7"  fill="rgba(10,8,6,0.7)"/>
+<!-- Haar-Wrap Linie -->
+<path d="M114 38 Q130 34 146 38" stroke="rgba(10,8,6,0.35)" stroke-width="1.5" fill="none"/>
+
+<!-- ═══ GESICHT ══════════════════════════════════════════════════════════════ -->
+<!-- Augen -->
+<ellipse cx="117" cy="76" rx="5.5" ry="4.5" fill="rgba(20,14,12,0.88)"/>
+<ellipse cx="143" cy="76" rx="5.5" ry="4.5" fill="rgba(20,14,12,0.88)"/>
+<!-- Glanz -->
+<ellipse cx="118.5" cy="74.2" rx="1.5" ry="1.2" fill="rgba(255,255,255,0.65)"/>
+<ellipse cx="144.5" cy="74.2" rx="1.5" ry="1.2" fill="rgba(255,255,255,0.65)"/>
+<!-- Brauen -->
+<path d="M110 68 Q117 65 124 67" stroke="rgba(20,14,12,0.8)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M136 67 Q143 65 150 68" stroke="rgba(20,14,12,0.8)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<!-- Nase -->
+<path d="M130 82 Q127 90 125 93 Q130 95 135 93 Q133 90 130 82 Z" fill="rgba(0,0,0,0.1)"/>
+<!-- Lippen -->
+<path d="M122 105 Q130 109 138 105" stroke="#8a5045" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<path d="M123 105 Q130 102 137 105" stroke="#c07060" stroke-width="0.8" fill="none" stroke-opacity="0.5"/>
+
+<!-- ═══ SCHLÜSSELBEIN ════════════════════════════════════════════════════════ -->
+<path d="M96 146 Q113 140 130 142 Q147 140 164 146"
+      stroke="rgba(255,255,255,0.08)" stroke-width="1" fill="none"/>
+</svg>

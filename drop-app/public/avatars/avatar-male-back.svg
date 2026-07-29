@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 620" fill="none">
+<defs>
+  <linearGradient id="fig" x1="90%" y1="0%" x2="10%" y2="100%">
+    <stop offset="0%"   stop-color="#50526a"/>
+    <stop offset="55%"  stop-color="#3c3e56"/>
+    <stop offset="100%" stop-color="#282938"/>
+  </linearGradient>
+  <linearGradient id="rim" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#7880b0" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </linearGradient>
+  <linearGradient id="sk" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#c09070"/>
+    <stop offset="100%" stop-color="#a07250"/>
+  </linearGradient>
+  <linearGradient id="hr" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#1e1614"/>
+    <stop offset="100%" stop-color="#0f0c0a"/>
+  </linearGradient>
+  <filter id="gs"><feGaussianBlur stdDeviation="0.6"/></filter>
+</defs>
+
+<ellipse cx="130" cy="615" rx="62" ry="8" fill="rgba(70,55,180,0.20)" filter="url(#gs)"/>
+
+<!-- Schuhe -->
+<path d="M84 570 L79 597 Q78 606 92 608 L114 608 Q123 605 121 595 L118 572 Z" fill="#1a1b24"/>
+<path d="M176 570 L181 597 Q182 606 168 608 L146 608 Q137 605 139 595 L142 572 Z" fill="#1a1b24"/>
+
+<!-- Unterschenkel -->
+<path d="M86 455 L82 572 Q81 579 89 581 L113 581 Q121 579 120 570 L117 455 Z" fill="url(#fig)"/>
+<path d="M174 455 L178 572 Q179 579 171 581 L147 581 Q139 579 140 570 L143 455 Z" fill="url(#fig)"/>
+<path d="M82 466 L82 562" stroke="url(#rim)" stroke-width="3.5" fill="none" stroke-opacity="0.5"/>
+
+<!-- Oberschenkel -->
+<path d="M90 305 L84 457 Q83 465 90 468 L116 468 Q124 466 122 457 L118 305 Z" fill="url(#fig)"/>
+<path d="M170 305 L176 457 Q177 465 170 468 L144 468 Q136 466 138 457 L142 305 Z" fill="url(#fig)"/>
+
+<!-- Hüfte -->
+<path d="M93 270 Q88 288 88 306 L91 313 L169 313 L172 306 Q172 288 167 270
+         Q160 258 130 258 Q100 258 93 270 Z" fill="url(#fig)"/>
+
+<!-- Torso Rücken -->
+<path d="M82 138 Q72 145 70 164 L67 246 Q66 261 75 268 L93 276 L130 280 L167 276
+         L185 268 Q194 261 193 246 L190 164 Q188 145 178 138 Q158 128 130 126 Q102 128 82 138 Z"
+      fill="url(#fig)"/>
+<!-- Rim links -->
+<path d="M67 148 Q66 200 68 266" stroke="url(#rim)" stroke-width="5" fill="none" stroke-linecap="round" stroke-opacity="0.65"/>
+<!-- Schulterblätter -->
+<ellipse cx="104" cy="173" rx="15" ry="19" fill="rgba(255,255,255,0.04)"/>
+<ellipse cx="156" cy="173" rx="15" ry="19" fill="rgba(255,255,255,0.04)"/>
+<!-- Wirbelsäule -->
+<line x1="130" y1="144" x2="130" y2="272" stroke="rgba(255,255,255,0.07)" stroke-width="1" stroke-dasharray="2 5"/>
+<!-- Trapez -->
+<path d="M92 144 Q130 156 168 144" stroke="rgba(255,255,255,0.06)" stroke-width="1.2" fill="none"/>
+
+<!-- Arme -->
+<path d="M70 152 Q57 159 53 182 L47 268 Q45 281 55 284 L69 287 L79 196 Q80 167 83 145 Z" fill="url(#fig)"/>
+<ellipse cx="55" cy="290" rx="12" ry="9" fill="url(#sk)" transform="rotate(-10,55,290)"/>
+<path d="M190 152 Q203 159 207 182 L213 268 Q215 281 205 284 L191 287 L181 196 Q180 167 177 145 Z" fill="url(#fig)"/>
+<ellipse cx="205" cy="290" rx="12" ry="9" fill="url(#sk)" transform="rotate(10,205,290)"/>
+<path d="M47 195 L49 266" stroke="url(#rim)" stroke-width="2.5" fill="none" stroke-opacity="0.4"/>
+
+<!-- Schultern -->
+<ellipse cx="77"  cy="147" rx="16" ry="12" fill="url(#fig)"/>
+<ellipse cx="183" cy="147" rx="16" ry="12" fill="url(#fig)"/>
+
+<!-- Hals -->
+<path d="M116 118 Q113 128 113 140 L130 145 L147 140 Q147 128 144 118 Z" fill="url(#sk)"/>
+
+<!-- Kopf -->
+<path d="M97 76 Q96 52 112 40 Q120 34 130 34 Q140 34 148 40
+         Q164 52 163 76 Q162 100 150 112 Q142 120 130 120 Q118 120 110 112 Q98 100 97 76 Z" fill="url(#sk)"/>
+<path d="M106 98 Q106 116 130 120 Q154 116 154 98" fill="url(#sk)"/>
+
+<!-- Haar kurz Rücken -->
+<path d="M97 73 Q95 51 112 39 Q120 33 130 33 Q140 33 148 39 Q165 51 163 73
+         Q159 52 148 42 Q140 36 130 36 Q120 36 112 42 Q101 52 97 73 Z" fill="url(#hr)"/>
+<!-- Seiten -->
+<path d="M97 73 Q95 61 97 50" stroke="url(#hr)" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M163 73 Q165 61 163 50" stroke="url(#hr)" stroke-width="5" stroke-linecap="round" fill="none"/>
+<!-- Nacken-Haarlinie -->
+<path d="M110 119 Q130 125 150 119 Q144 130 130 132 Q116 130 110 119 Z" fill="url(#hr)" fill-opacity="0.65"/>
+<!-- Textur -->
+<path d="M100 54 Q115 47 130 49 Q145 47 160 54" stroke="rgba(10,8,6,0.4)" stroke-width="1.8" fill="none"/>
+</svg>

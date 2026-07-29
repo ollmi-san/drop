@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 620" fill="none">
+<defs>
+  <linearGradient id="fig" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%"   stop-color="#50526a"/>
+    <stop offset="60%"  stop-color="#3c3e56"/>
+    <stop offset="100%" stop-color="#282938"/>
+  </linearGradient>
+  <linearGradient id="figD" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#282938"/>
+    <stop offset="100%" stop-color="#3e4058"/>
+  </linearGradient>
+  <linearGradient id="sk" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#c09070"/>
+    <stop offset="100%" stop-color="#a07250"/>
+  </linearGradient>
+  <linearGradient id="hr" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#1e1614"/>
+    <stop offset="100%" stop-color="#0f0c0a"/>
+  </linearGradient>
+  <filter id="gs"><feGaussianBlur stdDeviation="0.6"/></filter>
+</defs>
+
+<ellipse cx="126" cy="615" rx="54" ry="7" fill="rgba(70,55,180,0.20)" filter="url(#gs)"/>
+
+<!-- Schuh Seitenprofil (chunkier) -->
+<path d="M90 570 L84 598 Q82 608 98 610 L134 610 Q146 607 143 596 L138 573 Z" fill="#1a1b24"/>
+<path d="M84 597 L143 597" stroke="rgba(255,255,255,0.08)" stroke-width="0.8"/>
+<rect x="84" y="595" width="24" height="7" rx="3" fill="#111118"/>
+
+<!-- Unterschenkel -->
+<path d="M100 452 L94 573 Q93 581 102 583 L124 583 Q133 581 131 571 L127 452 Z" fill="url(#fig)"/>
+<!-- Wade -->
+<path d="M128 475 Q138 500 134 542" stroke="rgba(255,255,255,0.06)" stroke-width="3" fill="none"/>
+
+<!-- Oberschenkel -->
+<path d="M102 302 L98 454 Q97 462 104 465 L124 465 Q133 462 131 453 L128 302 Z" fill="url(#fig)"/>
+
+<!-- Hüfte -->
+<path d="M98 266 Q93 284 95 304 L102 312 L132 312 L140 300 Q138 280 133 266
+         Q126 254 116 253 Q107 254 98 266 Z" fill="url(#fig)"/>
+<!-- Gesäß -->
+<path d="M95 272 Q88 294 92 315" stroke="rgba(255,255,255,0.05)" stroke-width="4" fill="none"/>
+
+<!-- Torso Seitenprofil (athletisch: breite Brust, gerade Rücken) -->
+<path d="M98 138 Q90 147 88 167 L86 250 Q85 264 94 272 L98 277 L135 277
+         L144 265 Q150 253 148 242 L145 167 Q143 147 135 138
+         Q126 131 116 131 Q106 131 98 138 Z" fill="url(#fig)"/>
+<!-- Brust vorne (breiter) -->
+<path d="M144 154 Q154 170 152 196" stroke="rgba(255,255,255,0.08)" stroke-width="3.5" fill="none"/>
+<!-- Rücken gerade -->
+<path d="M87 162 Q86 206 87 260" stroke="rgba(255,255,255,0.05)" stroke-width="2.5" fill="none"/>
+<!-- Bauch flach -->
+<path d="M147 238 Q146 258 140 272" stroke="rgba(255,255,255,0.05)" stroke-width="2" fill="none"/>
+
+<!-- Vorderer Arm -->
+<path d="M136 150 Q148 158 153 182 L158 264 Q160 278 150 280 L140 282 L134 196 Q132 166 132 147 Z"
+      fill="url(#figD)"/>
+<ellipse cx="155" cy="284" rx="11" ry="8" fill="url(#sk)" transform="rotate(10,155,284)"/>
+
+<!-- Schulter (breit) -->
+<ellipse cx="134" cy="146" rx="15" ry="11" fill="url(#fig)"/>
+
+<!-- Hals -->
+<path d="M113 116 Q110 128 110 140 L120 145 L130 140 Q130 128 128 116 Z" fill="url(#sk)"/>
+
+<!-- Kopf Seitenprofil (männlicher Kiefer) -->
+<path d="M98 74 Q96 52 113 40 Q122 34 130 38 Q146 47 148 74
+         Q146 99 138 111 Q130 119 120 119 Q109 119 103 111 Q97 98 98 74 Z" fill="url(#sk)"/>
+<!-- Markanter Kiefer -->
+<path d="M98 90 Q96 112 120 119 Q108 115 102 106 Q98 100 98 90 Z" fill="url(#sk)"/>
+<!-- Nase (größer, männlich) -->
+<path d="M148 76 L156 89 L149 93" stroke="url(#sk)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-opacity="0.6"/>
+<!-- Mund -->
+<path d="M143 107 Q148 110 152 107" stroke="#7a4a38" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<!-- Kinnbart-Schatten -->
+<path d="M136 113 Q144 118 150 114 Q146 120 140 121 Q135 120 136 113 Z" fill="rgba(20,14,12,0.2)"/>
+<!-- Auge -->
+<ellipse cx="135" cy="72" rx="5.5" ry="4.5" fill="rgba(20,14,12,0.88)"/>
+<ellipse cx="136.5" cy="70" rx="1.4" ry="1.2" fill="rgba(255,255,255,0.6)"/>
+<!-- Braue (dick) -->
+<path d="M127 65 Q134 62 142 64" stroke="rgba(20,14,12,0.85)" stroke-width="2.3" fill="none" stroke-linecap="round"/>
+<!-- Ohr -->
+<ellipse cx="99" cy="82" rx="5.5" ry="8" fill="url(#sk)"/>
+<path d="M100 77 Q103 82 100 88" stroke="rgba(160,114,80,0.4)" stroke-width="1" fill="none"/>
+
+<!-- Haar kurz Seite -->
+<path d="M98 72 Q96 50 113 38 Q122 32 130 36 Q146 45 148 72
+         Q143 52 132 44 Q122 38 112 42 Q99 52 98 72 Z" fill="url(#hr)"/>
+<!-- Seiten kurz -->
+<path d="M98 72 Q96 60 98 50" stroke="url(#hr)" stroke-width="5" stroke-linecap="round" fill="none"/>
+<!-- Textur -->
+<path d="M101 55 Q115 48 130 50 Q142 48 149 56" stroke="rgba(10,8,6,0.4)" stroke-width="1.8" fill="none"/>
+</svg>

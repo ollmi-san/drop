@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 620" fill="none">
+<defs>
+  <linearGradient id="fig" x1="10%" y1="0%" x2="90%" y2="100%">
+    <stop offset="0%"   stop-color="#50526a"/>
+    <stop offset="55%"  stop-color="#3c3e56"/>
+    <stop offset="100%" stop-color="#282938"/>
+  </linearGradient>
+  <linearGradient id="rim" x1="100%" y1="0%" x2="0%" y2="0%">
+    <stop offset="0%"   stop-color="#7880b0" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="transparent"/>
+  </linearGradient>
+  <linearGradient id="sk" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#c09070"/>
+    <stop offset="100%" stop-color="#a07250"/>
+  </linearGradient>
+  <linearGradient id="hr" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#1e1614"/>
+    <stop offset="100%" stop-color="#0f0c0a"/>
+  </linearGradient>
+  <filter id="gs"><feGaussianBlur stdDeviation="0.6"/></filter>
+</defs>
+
+<ellipse cx="130" cy="615" rx="62" ry="8" fill="rgba(70,55,180,0.20)" filter="url(#gs)"/>
+
+<!-- Schuhe (breiter, chunkier) -->
+<path d="M84 570 L79 596 Q77 606 91 608 L113 608 Q123 605 121 595 L118 572 Z" fill="#1a1b24"/>
+<path d="M176 570 L181 596 Q183 606 169 608 L147 608 Q137 605 139 595 L142 572 Z" fill="#1a1b24"/>
+
+<!-- Unterschenkel (kräftiger) -->
+<path d="M86 455 L82 572 Q81 579 89 581 L113 581 Q121 579 120 570 L117 455 Z" fill="url(#fig)"/>
+<path d="M174 455 L178 572 Q179 579 171 581 L147 581 Q139 579 140 570 L143 455 Z" fill="url(#fig)"/>
+<path d="M178 466 L177 562" stroke="url(#rim)" stroke-width="3.5" fill="none" stroke-opacity="0.55"/>
+
+<!-- Oberschenkel (breiter) -->
+<path d="M90 305 L84 457 Q83 465 90 468 L116 468 Q124 466 122 457 L118 305 Z" fill="url(#fig)"/>
+<path d="M170 305 L176 457 Q177 465 170 468 L144 468 Q136 466 138 457 L142 305 Z" fill="url(#fig)"/>
+<!-- Knie -->
+<ellipse cx="103" cy="442" rx="12" ry="9" fill="rgba(255,255,255,0.05)"/>
+<ellipse cx="157" cy="442" rx="12" ry="9" fill="rgba(255,255,255,0.05)"/>
+
+<!-- Hüfte (schmaler als Schultern = V-Taper) -->
+<path d="M93 270 Q88 288 88 306 L91 313 L169 313 L172 306 Q172 288 167 270
+         Q160 258 130 258 Q100 258 93 270 Z" fill="url(#fig)"/>
+
+<!-- Torso (V-Taper: breite Schultern, schmale Taille) -->
+<path d="M84 138
+  Q74 145 72 164
+  L69 246
+  Q68 261 77 268
+  L93 276 L130 280 L167 276 L183 268
+  Q192 261 191 246
+  L188 164
+  Q186 145 176 138
+  Q156 128 130 126
+  Q104 128 84 138 Z
+" fill="url(#fig)"/>
+<!-- Rim rechts -->
+<path d="M189 147 Q192 200 189 266" stroke="url(#rim)" stroke-width="5" fill="none" stroke-linecap="round"/>
+<!-- Brust-Definition (männlich) -->
+<path d="M84 172 Q107 183 130 181 Q153 183 176 172" stroke="rgba(255,255,255,0.07)" stroke-width="1" fill="none"/>
+<ellipse cx="106" cy="181" rx="18" ry="13" fill="rgba(0,0,0,0.06)"/>
+<ellipse cx="154" cy="181" rx="18" ry="13" fill="rgba(0,0,0,0.06)"/>
+<!-- Bauch-Mittellinie -->
+<line x1="130" y1="183" x2="130" y2="273" stroke="rgba(255,255,255,0.05)" stroke-width="0.8"/>
+<!-- Taille -->
+<path d="M70 220 Q68 235 72 244 L130 248 L188 244 Q192 235 190 220" fill="rgba(0,0,0,0.07)"/>
+
+<!-- Arme (dicker, athletisch) -->
+<!-- Links -->
+<path d="M72 152 Q59 159 55 182 L49 268 Q47 281 57 284 L71 287 L81 196 Q82 167 85 145 Z" fill="url(#fig)"/>
+<ellipse cx="57" cy="290" rx="12" ry="9" fill="url(#sk)" transform="rotate(-10,57,290)"/>
+<!-- Rechts -->
+<path d="M188 152 Q201 159 205 182 L211 268 Q213 281 203 284 L189 287 L179 196 Q178 167 175 145 Z" fill="url(#fig)"/>
+<ellipse cx="203" cy="290" rx="12" ry="9" fill="url(#sk)" transform="rotate(10,203,290)"/>
+<!-- Arm Rim -->
+<path d="M211 194 L209 267" stroke="url(#rim)" stroke-width="2.5" fill="none" stroke-opacity="0.55"/>
+<path d="M49 194 L51 267" stroke="rgba(120,128,176,0.25)" stroke-width="2" fill="none"/>
+
+<!-- Schultern (breit) -->
+<ellipse cx="79"  cy="147" rx="16" ry="12" fill="url(#fig)"/>
+<ellipse cx="181" cy="147" rx="16" ry="12" fill="url(#fig)"/>
+
+<!-- Hals (breiter) -->
+<path d="M116 118 Q113 128 113 140 L130 145 L147 140 Q147 128 144 118 Q138 114 130 114 Q122 114 116 118 Z"
+      fill="url(#sk)"/>
+
+<!-- Kopf (männlich: etwas breiter, markanterer Kiefer) -->
+<path d="M97 76 Q96 52 112 40 Q120 34 130 34 Q140 34 148 40
+         Q164 52 163 76 Q162 100 150 112 Q142 120 130 120 Q118 120 110 112 Q98 100 97 76 Z"
+      fill="url(#sk)"/>
+<!-- Kiefer -->
+<path d="M106 98 Q106 116 130 120 Q154 116 154 98" fill="url(#sk)"/>
+
+<!-- Haar (kurz) -->
+<path d="M97 73 Q95 51 112 39 Q120 33 130 33 Q140 33 148 39 Q165 51 163 73
+         Q159 53 148 43 Q140 37 130 37 Q120 37 112 43 Q101 53 97 73 Z" fill="url(#hr)"/>
+<!-- Textur -->
+<path d="M101 54 Q115 47 130 49 Q145 47 159 54" stroke="rgba(10,8,6,0.45)" stroke-width="2" fill="none"/>
+<path d="M99 63 Q114 56 130 58 Q146 56 161 63" stroke="rgba(10,8,6,0.35)" stroke-width="1.5" fill="none"/>
+<!-- Seiten kurz -->
+<path d="M97 73 Q95 61 97 50" stroke="url(#hr)" stroke-width="5" stroke-linecap="round" fill="none"/>
+<path d="M163 73 Q165 61 163 50" stroke="url(#hr)" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+<!-- Gesicht -->
+<ellipse cx="116" cy="76" rx="6" ry="5" fill="rgba(20,14,12,0.88)"/>
+<ellipse cx="144" cy="76" rx="6" ry="5" fill="rgba(20,14,12,0.88)"/>
+<ellipse cx="117.5" cy="74" rx="1.6" ry="1.3" fill="rgba(255,255,255,0.6)"/>
+<ellipse cx="145.5" cy="74" rx="1.6" ry="1.3" fill="rgba(255,255,255,0.6)"/>
+<!-- Brauen (dicker) -->
+<path d="M108 68 Q116 65 124 67" stroke="rgba(20,14,12,0.85)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M136 67 Q144 65 152 68" stroke="rgba(20,14,12,0.85)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<!-- Nase -->
+<path d="M130 83 Q127 92 125 95 Q130 97 135 95 Q133 92 130 83 Z" fill="rgba(0,0,0,0.11)"/>
+<!-- Mund -->
+<path d="M121 107 Q130 111 139 107" stroke="#7a4a38" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<!-- Kinnbart-Andeutung -->
+<path d="M120 114 Q130 118 140 114" stroke="rgba(20,14,12,0.18)" stroke-width="1" fill="none"/>
+</svg>
