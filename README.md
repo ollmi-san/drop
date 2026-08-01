@@ -19,7 +19,6 @@ Eine spielerische Fashion-App, die den eigenen Kleiderschrank in ein digitales S
 | [CHANGELOG.md](./CHANGELOG.md) | Historie |
 | [CLAUDE.md](./CLAUDE.md) | Repo-Arbeitsregeln (Kernel liegt global in `~/.claude`) |
 | [mockups/](./mockups/) | Visuelle Referenz / Design-Spec |
-| [archive/](./archive/) | Abgelöste Dokumente |
 
 Die Verhaltensregeln (Denken, Loops, Tools, Memory, Agents) liegen global im AI-OS unter `~/.claude` und gelten für alle Projekte.
 
