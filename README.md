@@ -2,7 +2,7 @@
 
 Eine spielerische Fashion-App, die den eigenen Kleiderschrank in ein digitales Studio verwandelt.
 
-**Status:** Planungsphase
+**Status:** Phase 1 in Umsetzung — Hauptlinie `drop-app/`.
 
 ---
 
@@ -10,11 +10,13 @@ Eine spielerische Fashion-App, die den eigenen Kleiderschrank in ein digitales S
 
 | Datei | Inhalt |
 |---|---|
-| [CLAUDE.md](./CLAUDE.md) | Arbeitsregeln für Claude Code |
 | [PROJECT.md](./PROJECT.md) | Produktbeschreibung, Features, Roadmap, Design-Spec |
-| [WORKFLOW.md](./WORKFLOW.md) | Workflow für größere Features |
-| [mockups/](./mockups/) | Visuelle Referenzen |
+| [CLAUDE.md](./CLAUDE.md) | DROP-spezifische Projektregeln |
+| [mockups/](./mockups/) | Visuelle Referenzen / Design-Spec |
+| [archive/](./archive/) | Abgelöste Dokumente (historisch) |
+
+Die **Verhaltensregeln** (Denken, Loops, Tools, Memory, Agents) liegen global im AI-OS unter `~/.claude` und gelten für alle Projekte — nicht in diesem Repo dupliziert.
 
 ## Tech Stack
 
-Next.js 16 + React Three Fiber + Tailwind CSS v4 + Zustand + Claude Vision API · Hosting: Vercel
+Vite + React + TypeScript + Tailwind CSS + Zustand + @dnd-kit · KI: Claude Vision · Hosting: Vercel

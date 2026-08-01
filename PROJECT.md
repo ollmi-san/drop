@@ -6,7 +6,7 @@ Eine spielerische Fashion-App, die den eigenen Kleiderschrank in ein digitales S
 
 **Zielsatz:** "Eine Version, die man Freunden zeigt – und sie sagen: Ey, das macht echt Spaß."
 
-**Status:** Planungsphase. Noch kein Code geschrieben.
+**Status:** Phase 1 in Umsetzung. Hauptlinie: `drop-app/` (Vite + React + TypeScript).
 
 ---
 
@@ -49,6 +49,7 @@ Visuelle Referenzen: [mockups/](./mockups/)
 - Polierte Plattform mit goldenem Glow-Ring
 - Geblurrte Mannequins im Hintergrund mit atmosphärischem Nebel
 - Premium-Boutique-Feeling mit leichter Sci-Fi-Note
+- Akzentfarbe: Lila (#7B2FBE)
 
 ### Licht & Tiefe
 - Weiches Spotlight von oben auf den Avatar
@@ -113,13 +114,14 @@ Visuelle Referenzen: [mockups/](./mockups/)
 
 | Bereich | Technologie |
 |---|---|
-| Frontend | Next.js 16 + React + TypeScript |
-| 3D-Engine | Three.js + React Three Fiber |
-| Styling | Tailwind CSS v4 |
+| Frontend | Vite + React 18 + TypeScript |
+| Styling | Tailwind CSS v3 |
 | State | Zustand |
-| KI | Claude Sonnet 4.5 Vision |
+| Interaktion | @dnd-kit, vaul (Drawer) |
+| KI | Claude Vision (Erkennung + Naming) |
 | Sound | Web Audio API (programmatisch generiert) |
 | Hosting | Vercel |
+| 3D-Avatar (Referenz) | Three.js + React Three Fiber — in Legacy-App `app/` |
 | Datenbank (Phase 2) | Supabase |
 | Try-On (Phase 3) | Fashn.ai |
 
