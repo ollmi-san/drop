@@ -3,7 +3,7 @@
 Getroffene Produktentscheidungen mit Begründung. Offene Punkte gehören nicht hierher.
 
 ## Hauptlinie: Vite-App `drop-app/`
-Neue Features werden ausschließlich in `drop-app/` (Vite + React + TypeScript) gebaut. Die Next.js-App `app/` bleibt nur Referenz (dort liegt der Three.js-3D-Avatar).
+Neue Features werden ausschließlich in `drop-app/` (Vite + React + TypeScript) gebaut. Die alte Next.js-App wurde aus dem Repo entfernt und ist nur noch im Branch `legacy/nextjs-reference` als Referenz erhalten (dort liegt der Three.js-3D-Avatar).
 **Grund:** Eine klare Hauptlinie verhindert konkurrierende Systeme.
 
 ## Das Mockup ist die Wahrheit

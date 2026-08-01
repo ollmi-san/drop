@@ -1,7 +1,7 @@
 # DROP — Current Status
 
 **Version:** Phase 1 (MVP) in Umsetzung.
-**Hauptlinie:** `drop-app/` (Vite + React + TypeScript). Legacy-Referenz: `app/` (Next.js, Three.js-3D-Avatar).
+**Hauptlinie:** `drop-app/` (Vite + React + TypeScript). Legacy-Referenz: Branch `legacy/nextjs-reference` (Next.js, Three.js-3D-Avatar).
 **Stand:** 2026-08-01. Die „fertig / in Arbeit"-Einordnung ist eine Momentaufnahme aus dem Code und per Test zu bestätigen.
 
 ## Vorhanden im Code (Bausteine)
